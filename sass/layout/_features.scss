@@ -1,0 +1,28 @@
+.features {
+  display: flex;
+}
+.features__item {
+  width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.features__icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: getColor('bg-team');
+  border-radius: 4px;
+}
+.features__icon {
+  width: 70px;
+  height: 70px;
+}
+.features__title {
+  margin-bottom: 10px;
+}

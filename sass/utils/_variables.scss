@@ -1,0 +1,27 @@
+$colors: (
+  'primary': #212121,
+  'secondary': #757575,
+  'primary-light': #ffffff,
+  'secondary-light': rgba(255, 255, 255, 0.6),
+  'accent': #2196f3,
+  'bg-accent': #188ce8,
+
+  'logo-header': #000000,
+  'logo-footer': #ffffff,
+
+  'hero-title': #ffffff,
+  'btn-text': #ffffff,
+
+  'bg-primary': #ffffff,
+  'bg-secondary': #2f303a,
+  'bg-team': #f5f4fa,
+
+  'icon-primary': #afb1b8,
+  'icon-secondary': #ffffff,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+
+$time-function: cubic-bezier(0.4, 0, 0.2, 1);

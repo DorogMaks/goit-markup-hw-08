@@ -1,0 +1,48 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: getColor('bg-secondary');
+}
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.adress {
+  margin-top: 20px;
+}
+.address__item + .address__item {
+  margin-top: 9px;
+}
+
+.footer__text {
+  display: block;
+
+  margin-bottom: 20px;
+}
+
+.join {
+  margin-left: 70px;
+}
+.soc-networks__link--white {
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: getColor('icon-secondary');
+}
+.subscribe {
+  margin-left: auto;
+}
+.subscribe__input {
+  min-width: 358px;
+  padding: 15px 16px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: getColor('bg-secondary');
+  outline: none;
+}
+.sub-button {
+  margin-left: 12px;
+}
+.sub-button__icon {
+  margin-left: 10px;
+}

@@ -1,0 +1,14 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &__title {
+    margin-bottom: 50px;
+  }
+  &--no-padding-top {
+    padding-top: 0;
+  }
+  &--other-bg {
+    background-color: getColor('bg-team');
+  }
+}

@@ -1,0 +1,22 @@
+@import './utils/variables';
+@import './base/reset';
+@import './base/hidden';
+
+@import './components/text-decoration';
+@import './components/section';
+@import './components/container';
+@import './components/buttons';
+
+@import './layout/header';
+
+@import './layout/hero';
+@import './layout/features';
+@import './layout/about';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/backdrop';
+@import './layout/form';
+
+@import './layout/portfolio';
+
+@import './layout/footer';
