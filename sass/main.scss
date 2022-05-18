@@ -1,13 +1,16 @@
 @import './utils/variables';
 @import './base/reset';
-@import './base/hidden';
+@import './base/common';
+@import './utils/hidden';
+@import './utils/placeholders';
+@import './utils/mixins';
 
-@import './components/text-decoration';
 @import './components/section';
 @import './components/container';
-@import './components/buttons';
+@import './components/button';
 
 @import './layout/header';
+@import './layout/logo';
 
 @import './layout/hero';
 @import './layout/features';

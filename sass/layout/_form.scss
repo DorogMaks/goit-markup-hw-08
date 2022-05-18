@@ -5,6 +5,10 @@
   display: block;
 
   margin-bottom: 12px;
+
+  @include font(700, 20px, 1.15, 0.03em);
+  text-align: center;
+  color: getColor('primary');
 }
 .form__field {
   display: flex;
@@ -18,12 +22,17 @@
 }
 .form__label {
   margin-bottom: 4px;
+
+  @include font(null, 12px, 1.17, 0.01em);
+  color: getColor('secondary');
 }
 
 .form__input {
   padding: 12px 16px 12px 42px;
 
   width: 100%;
+
+  @include font(null, 16px, 1.13, 0.01em);
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -64,6 +73,8 @@
   width: 100%;
   height: 120px;
 
+  @include font(null, 14px, 1.14, 0.01em);
+
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
@@ -75,6 +86,10 @@
     outline: none;
     border: 1px solid getColor('accent');
   }
+  &::placeholder {
+    @include font(null, 14px, 1.14, 0.01em);
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .checkbox {
@@ -85,6 +100,9 @@
   position: relative;
 
   padding-left: 24px;
+
+  @include font(null, 14px, 1.71, 0.03em);
+  color: getColor('secondary');
 
   &:hover {
     fill: getColor('accent');
@@ -122,6 +140,11 @@
 }
 .checkbox__input:focus ~ .checkbox__icon--check {
   fill: getColor('accent');
+}
+.agreement-conditions {
+  @include font(null, 14px, 1.71, 0.03em);
+  text-decoration-line: underline;
+  color: getColor('accent');
 }
 .submit-button {
   display: block;

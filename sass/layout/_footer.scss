@@ -10,15 +10,28 @@
 
 .adress {
   margin-top: 20px;
+
+  font-style: normal;
 }
 .address__item + .address__item {
   margin-top: 9px;
 }
+.address__link {
+  @include font(null, 14px, 1.71, 0.03em);
+  color: getColor('secondary-light');
 
+  &--light {
+    color: getColor('primary-light');
+  }
+}
 .footer__text {
   display: block;
 
   margin-bottom: 20px;
+
+  @include font(700, 14px, 1.14, 0.03em);
+  text-transform: uppercase;
+  color: getColor('primary-light');
 }
 
 .join {
@@ -35,10 +48,18 @@
   min-width: 358px;
   padding: 15px 16px;
 
+  @include font(null, 16px, 1.25, 0.03em);
+  color: getColor('secondary-light');
+
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: getColor('bg-secondary');
   outline: none;
+
+  &::placeholder {
+    @include font(null, 16px, 1.25, 0.03em);
+    color: getColor('secondary-light');
+  }
 }
 .sub-button {
   margin-left: 12px;

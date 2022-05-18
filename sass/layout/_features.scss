@@ -9,9 +9,7 @@
   }
 }
 .features__icon-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %align-list;
 
   height: 120px;
   margin-bottom: 30px;
@@ -25,4 +23,11 @@
 }
 .features__title {
   margin-bottom: 10px;
+
+  @include font(700, 14px, 1.14, 0.03em);
+  text-transform: uppercase;
+}
+.features__text {
+  @include font(null, 14px, 1.71, 0.03em);
+  color: getColor('secondary');
 }

@@ -1,24 +1,21 @@
 .button {
   display: inline-flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 
   min-width: 200px;
   min-height: 50px;
   border-radius: 4px;
   border: none;
 
+  @include font(700, 16px, 1.88, 0.06em);
+  color: getColor('btn-text');
+
   background-color: getColor('accent');
 
   transition-property: background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: $time-function;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  color: getColor('btn-text');
 
   &:hover,
   &:focus {

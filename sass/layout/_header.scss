@@ -23,6 +23,9 @@
   padding-top: 32px;
   padding-bottom: 32px;
 
+  @include font(500, 14px, 1.14, 0.02em);
+  color: getColor('primary');
+
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: $time-function;
@@ -60,6 +63,9 @@
   display: flex;
   align-items: center;
 
+  @include font(500, 14px, 1.14, 0.02em);
+  color: getColor('secondary');
+
   fill: getColor('secondary');
 
   transition-property: color, fill;
@@ -72,6 +78,7 @@
     fill: getColor('accent');
   }
 }
+
 .contacts__icon {
   margin-right: 10px;
 }
