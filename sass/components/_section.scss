@@ -1,12 +1,16 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   &__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
-    @include font(700, 36px, 1.17, 0.03em);
+    @include font(700, 28px, 1.18, 0.03em);
     text-align: center;
+
+    @include media(1200px) {
+      @include font(null, 36px, 1.17, null);
+    }
   }
   &--no-padding-top {
     padding-top: 0;

@@ -3,19 +3,53 @@
   padding-bottom: 60px;
   background-color: getColor('bg-secondary');
 }
+
 .footer__container {
-  display: flex;
-  align-items: baseline;
+  text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    text-align: start;
+  }
+}
+
+.follow-box {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: flex-start;
+  }
+}
+
+.contact-box {
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
+}
+
+.footer__logo {
+  display: block;
+
+  margin-bottom: 20px;
 }
 
 .adress {
-  margin-top: 20px;
-
   font-style: normal;
 }
-.address__item + .address__item {
-  margin-top: 9px;
+
+.address__item:not(:last-child) {
+  margin-bottom: 8px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
 }
+
 .address__link {
   @include font(null, 14px, 1.71, 0.03em);
   color: getColor('secondary-light');
@@ -24,6 +58,7 @@
     color: getColor('primary-light');
   }
 }
+
 .footer__text {
   display: block;
 
@@ -35,17 +70,37 @@
 }
 
 .join {
-  margin-left: 70px;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    margin-left: 70px;
+  }
 }
+
 .soc-networks__link--white {
   background-color: rgba(255, 255, 255, 0.1);
   fill: getColor('icon-secondary');
 }
+
 .subscribe {
-  margin-left: auto;
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
 }
+
+.subscribe__lable {
+  display: block;
+  margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
+}
+
 .subscribe__input {
-  min-width: 358px;
+  min-width: 100%;
   padding: 15px 16px;
 
   @include font(null, 16px, 1.25, 0.03em);
@@ -60,10 +115,14 @@
     @include font(null, 16px, 1.25, 0.03em);
     color: getColor('secondary-light');
   }
+  @media screen and (min-width: 768px) {
+    min-width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    min-width: 358px;
+  }
 }
-.sub-button {
-  margin-left: 12px;
-}
+
 .sub-button__icon {
   margin-left: 10px;
 }

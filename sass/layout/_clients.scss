@@ -1,14 +1,26 @@
 .clients {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+
+  margin-bottom: -30px;
+  margin-left: -30px;
 }
-.clients__item + .clients__item {
+.clients__item {
+  margin-bottom: 30px;
   margin-left: 30px;
+
+  width: calc(100% / 2 - 30px);
+
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 3 - 30px);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 6 - 30px);
+  }
 }
 .clients__link {
   @extend %align-list;
 
-  width: 170px;
   height: 92px;
 
   border: 1px solid getColor('icon-primary');
