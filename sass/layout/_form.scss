@@ -6,9 +6,13 @@
 
   margin-bottom: 12px;
 
-  @include font(700, 20px, 1.15, 0.03em);
+  @include font(700, 20px, 1.5, 0.03em);
   text-align: center;
   color: getColor('primary');
+
+  @media screen and (min-width: 1200px) {
+    @include font(null, 20px, 1.15, null);
+  }
 }
 .form__field {
   display: flex;
@@ -101,11 +105,14 @@
 
   padding-left: 24px;
 
-  @include font(null, 14px, 1.71, 0.03em);
+  @include font(null, 12px, 1.17, 0.03em);
   color: getColor('secondary');
 
   &:hover {
     fill: getColor('accent');
+  }
+  @media screen and (min-width: 1200px) {
+    @include font(null, 14px, 1.71, null);
   }
 }
 .checkbox__icon {
@@ -142,9 +149,13 @@
   fill: getColor('accent');
 }
 .agreement-conditions {
-  @include font(null, 14px, 1.71, 0.03em);
+  @include font(null, 12px, 1.17, 0.03em);
   text-decoration-line: underline;
   color: getColor('accent');
+
+  @media screen and (min-width: 1200px) {
+    @include font(null, 14px, 1.71, null);
+  }
 }
 .submit-button {
   display: block;

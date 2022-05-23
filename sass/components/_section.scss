@@ -13,9 +13,14 @@
     }
   }
   &--no-padding-top {
-    padding-top: 0;
-  }
-  &--other-bg {
-    background-color: getColor('bg-team');
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-top: 0;
+    }
+    &--other-bg {
+      background-color: getColor('bg-team');
+    }
   }
 }
