@@ -8,7 +8,15 @@
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
 
-  transition: opacity 250ms $time-function;
+  transition-property: opacity, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: $time-function;
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
 }
 .is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.8);
@@ -18,7 +26,7 @@
   top: 50%;
   left: 50%;
 
-  width: 450px;
+  width: calc(100vw - 30px);
   min-height: 609px;
 
   background-color: getColor('bg-primary');
@@ -28,6 +36,11 @@
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms $time-function;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    min-height: 609px;
+  }
 
   @media screen and (min-width: 1200px) {
     width: 528px;

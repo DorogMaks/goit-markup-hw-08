@@ -8,12 +8,12 @@
     @include font(700, 28px, 1.18, 0.03em);
     text-align: center;
 
-    @include media(1200px) {
+    @media screen and (min-width: 1200px) {
       @include font(null, 36px, 1.17, null);
     }
   }
   &--no-padding-top {
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1199px) {
       display: none;
     }
     @media screen and (min-width: 1200px) {

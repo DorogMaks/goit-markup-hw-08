@@ -1,5 +1,5 @@
 .logo {
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
   @include font(700, 24px, 1.17, 0.03em);
   color: getColor('accent');
   &--dark {

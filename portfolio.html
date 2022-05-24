@@ -25,8 +25,7 @@
         >
         <button
           type="button"
-          class="mob-menu__btn--open mob-menu__btn"
-          data-menu-open
+          class="mob-menu__btn--open mob-menu__btn js-open-menu"
         >
           <svg class="mob-menu__icon">
             <use href="./images/icons.svg#icon-menu-open"></use>
@@ -69,12 +68,11 @@
         </ul>
       </div>
 
-      <div class="mob-menu is-hidden" data-menu>
+      <div class="mob-menu js-menu-container">
         <div class="container mob-menu__container">
           <button
             type="button"
-            class="mob-menu__btn--close mob-menu__btn"
-            data-menu-close
+            class="mob-menu__btn--close mob-menu__btn js-close-menu"
           >
             <svg class="mob-menu__icon">
               <use href="./images/icons.svg#icon-menu-close"></use>
@@ -185,13 +183,37 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__box">
-                  <img
-                    src="./images/portfolio/web-1.jpg"
-                    alt="Страница сайта на мониторе ноутбука"
-                    width="370"
-                    height="294"
-                    class="portfolio__image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/web1-tab-1x.jpg 1x,
+                        ./images/portfolio/web1-tab-1x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/web1-tab-1x.jpg 1x,
+                        ./images/portfolio/web1-tab-1x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/web1-mob-1x.jpg 1x,
+                        ./images/portfolio/web1-mob-1x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio/web1-mob-1x.jpg"
+                      alt="team member"
+                      class="team__image"
+                    />
+                  </picture>
                   <div class="portfolio__overlay">
                     <p class="portfolio__label">
                       Ресурс предлагает комплексные предложения с разным уровнем
@@ -210,13 +232,37 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__box">
-                  <img
-                    src="./images/portfolio/design-1.jpg"
-                    alt="Баскетбольный постер"
-                    width="370"
-                    height="294"
-                    class="portfolio__image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/design1-tab-1x.jpg 1x,
+                        ./images/portfolio/design1-tab-1x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/design1-tab-1x.jpg 1x,
+                        ./images/portfolio/design1-tab-1x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/design1-mob-1x.jpg 1x,
+                        ./images/portfolio/design1-mob-1x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio/design1-mob-1x.jpg"
+                      alt="team member"
+                      class="team__image"
+                    />
+                  </picture>
                   <div class="portfolio__overlay">
                     <p class="portfolio__label">
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -236,13 +282,37 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__box">
-                  <img
-                    src="./images/portfolio/app-1.jpg"
-                    alt="Логотип и название ресторана"
-                    width="370"
-                    height="294"
-                    class="portfolio__image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/app1-tab-1x.jpg 1x,
+                        ./images/portfolio/app1-tab-1x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/app1-tab-1x.jpg 1x,
+                        ./images/portfolio/app1-tab-1x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/app1-mob-1x.jpg 1x,
+                        ./images/portfolio/app1-mob-1x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio/app1-mob-1x.jpg"
+                      alt="team member"
+                      class="team__image"
+                    />
+                  </picture>
                   <div class="portfolio__overlay">
                     <p class="portfolio__label">
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -262,13 +332,37 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__box">
-                  <img
-                    src="./images/portfolio/marketing-1.jpg"
-                    alt="Полноразмерные наушники"
-                    width="370"
-                    height="294"
-                    class="portfolio__image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/marketing1-tab-1x.jpg 1x,
+                        ./images/portfolio/marketing1-tab-1x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/marketing1-tab-1x.jpg 1x,
+                        ./images/portfolio/marketing1-tab-1x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/marketing1-mob-1x.jpg 1x,
+                        ./images/portfolio/marketing1-mob-1x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio/marketing1-mob-1x.jpg"
+                      alt="team member"
+                      class="team__image"
+                    />
+                  </picture>
                   <div class="portfolio__overlay">
                     <p class="portfolio__label">
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -288,13 +382,37 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__box">
-                  <img
-                    src="./images/portfolio/app-2.jpg"
-                    alt="Две коробки с логотипами проекта"
-                    width="370"
-                    height="294"
-                    class="portfolio__image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/app2-tab-1x.jpg 1x,
+                        ./images/portfolio/app2-tab-1x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/app2-tab-1x.jpg 1x,
+                        ./images/portfolio/app2-tab-1x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/app2-mob-1x.jpg 1x,
+                        ./images/portfolio/app2-mob-1x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio/app2-mob-1x.jpg"
+                      alt="team member"
+                      class="team__image"
+                    />
+                  </picture>
                   <div class="portfolio__overlay">
                     <p class="portfolio__label">
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -314,13 +432,37 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__box">
-                  <img
-                    src="./images/portfolio/web-2.jpg"
-                    alt="Страница сайта на мониторе компьютера"
-                    width="370"
-                    height="294"
-                    class="portfolio__image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/web2-tab-1x.jpg 1x,
+                        ./images/portfolio/web2-tab-1x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/web2-tab-1x.jpg 1x,
+                        ./images/portfolio/web2-tab-1x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/web2-mob-1x.jpg 1x,
+                        ./images/portfolio/web2-mob-1x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio/web2-mob-1x.jpg"
+                      alt="team member"
+                      class="team__image"
+                    />
+                  </picture>
                   <div class="portfolio__overlay">
                     <p class="portfolio__label">
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -340,13 +482,37 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__box">
-                  <img
-                    src="./images/portfolio/design-2.jpg"
-                    alt="Раскрытая книга"
-                    width="370"
-                    height="294"
-                    class="portfolio__image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/design2-tab-1x.jpg 1x,
+                        ./images/portfolio/design2-tab-1x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/design2-tab-1x.jpg 1x,
+                        ./images/portfolio/design2-tab-1x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/design2-mob-1x.jpg 1x,
+                        ./images/portfolio/design2-mob-1x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio/design2-mob-1x.jpg"
+                      alt="team member"
+                      class="team__image"
+                    />
+                  </picture>
                   <div class="portfolio__overlay">
                     <p class="portfolio__label">
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -366,13 +532,37 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__box">
-                  <img
-                    src="./images/portfolio/marketing-2.jpg"
-                    alt="Бирка с названием проекта"
-                    width="370"
-                    height="294"
-                    class="portfolio__image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/marketing2-tab-1x.jpg 1x,
+                        ./images/portfolio/marketing2-tab-1x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/marketing2-tab-1x.jpg 1x,
+                        ./images/portfolio/marketing2-tab-1x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/marketing2-mob-1x.jpg 1x,
+                        ./images/portfolio/marketing2-mob-1x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio/marketing2-mob-1x.jpg"
+                      alt="team member"
+                      class="team__image"
+                    />
+                  </picture>
                   <div class="portfolio__overlay">
                     <p class="portfolio__label">
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -392,13 +582,37 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="portfolio__box">
-                  <img
-                    src="./images/portfolio/app-3.jpg"
-                    alt="Страница приложения на мониторе ноутбука"
-                    width="370"
-                    height="294"
-                    class="portfolio__image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/app3-tab-1x.jpg 1x,
+                        ./images/portfolio/app3-tab-1x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/app3-tab-1x.jpg 1x,
+                        ./images/portfolio/app3-tab-1x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      type="image/jpeg"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/app3-mob-1x.jpg 1x,
+                        ./images/portfolio/app3-mob-1x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      type="image/jpeg"
+                    />
+                    <img
+                      src="./images/portfolio/app3-mob-1x.jpg"
+                      alt="team member"
+                      class="team__image"
+                    />
+                  </picture>
                   <div class="portfolio__overlay">
                     <p class="portfolio__label">
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -525,6 +739,12 @@
       </div>
     </footer>
 
-    <script src="./js/mobile-menu.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
