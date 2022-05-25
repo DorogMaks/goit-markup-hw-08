@@ -1,27 +1,36 @@
-.filter {
-  display: flex;
-  flex-wrap: wrap;
-
+.filter__box {
   margin-bottom: 40px;
 
   @media screen and (min-width: 768px) {
-    justify-content: center;
     margin-bottom: 30px;
   }
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
   }
 }
-.filter__item {
-  margin-bottom: 15px;
 
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: -15px;
+  }
   @media screen and (min-width: 768px) {
-    margin-bottom: 0px;
+    justify-content: center;
   }
 }
+
+.filter__item {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+  }
+}
+
 .filter__item:not(:last-child) {
   margin-right: 8px;
 }
+
 .filter__btn {
   padding: 6px 22px;
 
@@ -48,21 +57,21 @@
 }
 
 .portfolio {
-  margin-bottom: -30px;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 0;
     gap: 30px;
   }
 }
 .portfolio__item {
-  margin-bottom: 30px;
-
   background-color: getColor('bg-primary');
 
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
   @media screen and (min-width: 768px) {
-    margin-bottom: 0;
     width: calc((100% - 30px) / 2);
   }
   @media screen and (min-width: 1200px) {

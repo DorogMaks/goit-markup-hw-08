@@ -5,16 +5,20 @@
 }
 
 .footer__container {
-  text-align: center;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: baseline;
-    text-align: start;
   }
 }
 
 .follow-box {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-around;
@@ -24,18 +28,14 @@
     justify-content: flex-start;
   }
 }
-
 .contact-box {
-  margin-bottom: 60px;
-
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 0;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
   }
 }
 
 .footer__logo {
   display: block;
-
   margin-bottom: 20px;
 }
 
@@ -45,6 +45,7 @@
 
 .address__item:not(:last-child) {
   margin-bottom: 8px;
+
   @media screen and (min-width: 1200px) {
     margin-bottom: 9px;
   }
@@ -70,10 +71,7 @@
 }
 
 .join {
-  margin-bottom: 60px;
-
   @media screen and (min-width: 1200px) {
-    margin-bottom: 0;
     margin-left: 70px;
   }
 }
@@ -90,11 +88,13 @@
 }
 
 .subscribe__lable {
-  display: block;
-  margin-bottom: 20px;
+  @media screen and (max-width: 1199px) {
+    display: block;
+    margin-bottom: 20px;
+  }
+
   @media screen and (min-width: 1200px) {
     display: inline-block;
-    margin-bottom: 0;
     margin-right: 12px;
   }
 }
