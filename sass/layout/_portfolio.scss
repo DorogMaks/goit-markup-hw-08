@@ -122,6 +122,11 @@
 
   @include font(null, 18px, 1.56, 0.03em);
   color: getColor('primary-light');
+
+  @media screen and (max-width: 379px) {
+    @include font(null, 16px, 1.38, null);
+    padding: 0 16px;
+  }
 }
 .portfolio__title {
   @include font(700, 18px, 2, 0.06em);

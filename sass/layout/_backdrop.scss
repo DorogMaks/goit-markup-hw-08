@@ -7,6 +7,7 @@
 
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
+  overflow-y: auto;
 
   transition-property: opacity, visibility;
   transition-duration: 250ms;
@@ -37,9 +38,13 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms $time-function;
 
+  @media screen and (max-height: 610px) {
+    top: 0;
+    transform: translate(-50%, 0);
+  }
+
   @media screen and (min-width: 480px) {
     width: 450px;
-    min-height: 609px;
   }
 
   @media screen and (min-width: 1200px) {

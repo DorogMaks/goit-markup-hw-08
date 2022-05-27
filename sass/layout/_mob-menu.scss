@@ -25,13 +25,17 @@
     justify-content: space-between;
 
     padding: 48px 40px;
+
+    @media screen and (max-height: 580px) {
+      justify-content: flex-start;
+    }
   }
 }
 
 .mob-menu__btn {
   padding: 0;
-  background-color: inherit;
   border: none;
+  background-color: transparent;
 
   transition-property: fill;
   transition-duration: 250ms;
@@ -59,6 +63,11 @@
   height: 40px;
 }
 
+.mob-navigation {
+  @media screen and (max-height: 580px) {
+    margin-bottom: 64px;
+  }
+}
 .mob-navigation__item {
   &:not(:last-child) {
     margin-bottom: 32px;
@@ -97,10 +106,16 @@
   &--tel {
     @include font(500, 34px, 1.18, 0.02em);
     color: getColor('accent');
+    @media screen and (max-width: 380px) {
+      @include font(null, 26px, null, null);
+    }
   }
   &--mail {
     @include font(500, 28px, 1.17, 0.02em);
     color: getColor('secondary');
+    @media screen and (max-width: 380px) {
+      @include font(null, 24px, null, null);
+    }
   }
 }
 
@@ -124,6 +139,11 @@
       width: 1px;
       height: 100%;
       background-color: rgba(33, 33, 33, 0.2);
+    }
+  }
+  @media screen and (max-width: 436px) {
+    &:nth-child(-n + 2) {
+      margin-bottom: 10px;
     }
   }
 }
