@@ -12,23 +12,12 @@
 .filter {
   display: flex;
   flex-wrap: wrap;
+  column-gap: 8px;
+  row-gap: 15px;
 
-  @media screen and (max-width: 767px) {
-    margin-bottom: -15px;
-  }
   @media screen and (min-width: 768px) {
     justify-content: center;
   }
-}
-
-.filter__item {
-  @media screen and (max-width: 767px) {
-    margin-bottom: 15px;
-  }
-}
-
-.filter__item:not(:last-child) {
-  margin-right: 8px;
 }
 
 .filter__btn {
